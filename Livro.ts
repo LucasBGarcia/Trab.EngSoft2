@@ -11,6 +11,7 @@ export class Livro {
         this._autor = autor;
     }
 
+    
     public adicionarCapitulo(quantCap: Number): any {
         for (let i = 0; i <= quantCap; i++) {
             console.log(`Cadastro de capitulos (${i}/${quantCap})`)
