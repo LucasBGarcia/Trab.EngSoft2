@@ -18,4 +18,11 @@ export class Livro {
             this._capitulo = teclado(`Digite o texto do capítulo: `)
         }
     }
+    public list():String{
+        return(
+            `ISBN      : ${this._ISBN}\n` +
+            `Energia   : ${this._capitulo}\n` +
+            `Vida      : ${this._autor}\n`
+        )
+    }
 }
