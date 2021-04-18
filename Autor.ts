@@ -1,8 +1,17 @@
-export class Autor {
-    protected _nome: string;
-    protected _nasc: Date;
-    constructor(nome: string, nasc: Date) {
+export default class Autor {
+    private _nome: string;
+    private _dataNasc: Date;
+
+    constructor(nome: string, dateNasc: Date) {
         this._nome = nome;
-        this._nasc = nasc;
+        this._dataNasc = dateNasc;
+    }
+
+    public get nome():string{
+        return this._nome
+    }
+
+    public get dataNasc():Date{
+        return this._dataNasc;
     }
 }
